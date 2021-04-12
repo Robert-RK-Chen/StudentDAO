@@ -60,7 +60,7 @@ public class StudentDAOImpl implements StudentDAO
     }
 
     /**
-     * TODO: 待完成的作业
+     * TODO: 寰呭畬鎴愮殑浣滀笟
      */
     @Override
     public void delete(long id)
@@ -114,7 +114,7 @@ public class StudentDAOImpl implements StudentDAO
     }
 
     /**
-     * TODO: 待完成的作业
+     * TODO: 寰呭畬鎴愮殑浣滀笟
      */
     @Override
     public List<Student> findAll()

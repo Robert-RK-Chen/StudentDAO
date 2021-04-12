@@ -14,38 +14,38 @@ public class Test
     {
         StudentDAOImpl impl = new StudentDAOImpl();
 
-        // µ÷ÓÃ findById() ·½·¨£¬²éÑ¯Ñ§ºÅÎª 1 µÄÑ§ÉúĞÅÏ¢
-        System.out.println("> ²éÑ¯Ñ§ºÅÎª 1 µÄÑ§ÉúĞÅÏ¢£º");
+        // è°ƒç”¨ findById() æ–¹æ³•ï¼ŒæŸ¥è¯¢å­¦å·ä¸º 1 çš„å­¦ç”Ÿä¿¡æ¯
+        System.out.println("> æŸ¥è¯¢å­¦å·ä¸º 1 çš„å­¦ç”Ÿä¿¡æ¯ï¼š");
         Student s1 = impl.findById(1);
-        System.out.println("Ñ§ºÅ£º" + s1.getId() + "£¬ĞÕÃû£º" + s1.getName());
+        System.out.println("å­¦å·ï¼š" + s1.getId() + "ï¼Œå§“åï¼š" + s1.getName());
 
-        // µ÷ÓÃ insert() ·½·¨£¬ÏòÊı¾İ¿âÖĞ²åÈëÒ»ÌõÑ§ÉúĞÅÏ¢
-        System.out.println("\n> ²åÈëÑ§ºÅÎª 5£¬ĞÕÃûÎª ¡°Li Hua¡± µÄÑ§Éú£º");
+        // è°ƒç”¨ insert() æ–¹æ³•ï¼Œå‘æ•°æ®åº“ä¸­æ’å…¥ä¸€æ¡å­¦ç”Ÿä¿¡æ¯
+        System.out.println("\n> æ’å…¥å­¦å·ä¸º 5ï¼Œå§“åä¸º â€œLi Huaâ€ çš„å­¦ç”Ÿï¼š");
         Student s2 = new Student();
         s2.setId(5);
         s2.setName("Li Hua");
         impl.insert(s2);
-        System.out.println("> ³É¹¦Ôö¼Ó¸ÃÑ§ÉúĞÅÏ¢£¡");
+        System.out.println("> æˆåŠŸå¢åŠ è¯¥å­¦ç”Ÿä¿¡æ¯ï¼");
 
-        // ²éÑ¯¸ÃÑ§ÉúĞÅÏ¢
-        System.out.println("\n> ²éÑ¯Ñ§ºÅÎª 5 µÄÑ§ÉúĞÅÏ¢£º");
+        // æŸ¥è¯¢è¯¥å­¦ç”Ÿä¿¡æ¯
+        System.out.println("\n> æŸ¥è¯¢å­¦å·ä¸º 5 çš„å­¦ç”Ÿä¿¡æ¯ï¼š");
         Student s3 = impl.findById(5);
-        System.out.println("Ñ§ºÅ£º" + s3.getId() + "£¬ĞÕÃû£º" + s3.getName());
+        System.out.println("å­¦å·ï¼š" + s3.getId() + "ï¼Œå§“åï¼š" + s3.getName());
 
-        // µ÷ÓÃ update() ·½·¨£¬¸üĞÂËûµÄÃû×Ö
-        System.out.println("\n> ¸üĞÂËûµÄÃû×ÖÎª ¡°Han MeiMei¡±");
+        // è°ƒç”¨ update() æ–¹æ³•ï¼Œæ›´æ–°ä»–çš„åå­—
+        System.out.println("\n> æ›´æ–°ä»–çš„åå­—ä¸º â€œHan MeiMeiâ€");
         s3.setName("Han MeiMei");
         impl.update(s3);
-        System.out.println("> ¸üĞÂÍê³É£¡\n" + "Ñ§ºÅ£º" + s3.getId() + "£¬ĞÕÃû£º" + s3.getName());
+        System.out.println("> æ›´æ–°å®Œæˆï¼\n" + "å­¦å·ï¼š" + s3.getId() + "ï¼Œå§“åï¼š" + s3.getName());
 
-        // µ÷ÓÃ delete() ·½·¨£¬É¾³ı¸ÃÑ§ÉúĞÅÏ¢
-        System.out.println("\n> É¾³ı¸ÃÑ§ÉúĞÅÏ¢£º<");
+        // è°ƒç”¨ delete() æ–¹æ³•ï¼Œåˆ é™¤è¯¥å­¦ç”Ÿä¿¡æ¯
+        System.out.println("\n> åˆ é™¤è¯¥å­¦ç”Ÿä¿¡æ¯ï¼š<");
         impl.delete(5);
-        System.out.println("> É¾³ı³É¹¦£¡");
+        System.out.println("> åˆ é™¤æˆåŠŸï¼");
 
-        // µ÷ÓÃ FindAll() ·½·¨£¬ä¯ÀÀÊı¾İ¿âÈ«²¿Ñ§ÉúĞÅÏ¢
-        System.out.println("\n> ËùÓĞÑ§ÉúĞÅÏ¢ÈçÏÂ£º");
+        // è°ƒç”¨ FindAll() æ–¹æ³•ï¼Œæµè§ˆæ•°æ®åº“å…¨éƒ¨å­¦ç”Ÿä¿¡æ¯
+        System.out.println("\n> æ‰€æœ‰å­¦ç”Ÿä¿¡æ¯å¦‚ä¸‹ï¼š");
         List<Student> students = impl.findAll();
-        students.forEach(s -> System.out.println("Ñ§ºÅ£º" + s.getId() + "£¬ĞÕÃû£º" + s.getName()));
+        students.forEach(s -> System.out.println("å­¦å·ï¼š" + s.getId() + "ï¼Œå§“åï¼š" + s.getName()));
     }
 }

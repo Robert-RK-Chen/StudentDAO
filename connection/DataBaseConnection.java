@@ -11,7 +11,7 @@ public class DataBaseConnection
     private final Connection conn;
 
     /**
-     * 构造器
+     * 鏋勯�犲櫒
      */
     public DataBaseConnection() throws SQLException, ClassNotFoundException
     {
@@ -24,7 +24,7 @@ public class DataBaseConnection
     }
 
     /**
-     * 获得连接
+     * 鑾峰緱杩炴帴
      */
     public Connection getConnection()
     {
@@ -32,7 +32,7 @@ public class DataBaseConnection
     }
 
     /**
-     * 关闭连接
+     * 鍏抽棴杩炴帴
      */
     public void close() throws SQLException
     {

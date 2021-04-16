@@ -17,7 +17,7 @@ public class DataBaseConnection
     {
         String databaseDriver = "org.sqlite.JDBC";
         Class.forName(databaseDriver);
-        String databaseUrl = "jdbc:sqlite:MyTestDatabase.sqlite";
+        String databaseUrl = "jdbc:sqlite:StudentDAO.sqlite";
         String databaseUser = "RobertChen";
         String password = "123456";
         conn = DriverManager.getConnection(databaseUrl, databaseUser, password);
